@@ -1,0 +1,104 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    width: 100vw;
+    height: 100vh;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(28, 5, 28);
+}
+
+#profilecard{
+    height: 70%;
+    aspect-ratio: 0.65;
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    /* border: 0.5px dotted white; */
+    background: white;
+    
+}
+
+#background{
+    width: 100%;
+    aspect-ratio: 2;
+    background-image: url(https://fastly.picsum.photos/id/769/1000/400.jpg?hmac=VuPHWI7Xcq41sFkLAJL7I_g01UZRsGp67XmVYAMsd5I);
+    background-position: center;
+    background-size: cover;
+}
+
+#profileImageParent{
+    position: absolute;
+    width: 100%;
+    top: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#profileImage{
+    background: url(./images/me2.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 40%;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border: 10px solid white;
+}
+
+#social{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    background: white;
+}
+
+#text{
+    font-family: 'Young Serif', serif;
+    color: #000;
+    font-size: 2rem;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+}
+
+#social a{
+    font-size: 3rem;
+    padding: 30px 0;
+}
+
+#social #github{
+    color: #000;
+}
+
+#social #insta{
+    color: red;
+}
+
+#social #linkedin{
+    color: #0a66c2;
+}
+
+#webd{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
